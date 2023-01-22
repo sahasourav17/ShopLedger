@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+/* .nav-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+} */
+
+/* Add some styling to the navbar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the navbar links */
+nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1{
+    position: relative;
+    left: 45%;
+    padding: 5px;
+}
+
+/* Add some spacing and styling to the form elements */
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow:hidden;
+    /* justify-content: flex-start; */
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* input {
+    overflow-x: ;
+    border-radius: 5px;
+    outline: none;
+} */
+
+/* Add some spacing and styling to the table */
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    /* padding: 20px; */
+    width: 100%;
+}
+
+
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Add some hover effect to the table rows */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Add some styling to the action buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(37, 202, 37);
+}
+
+#del {
+    background: rgb(226, 38, 38);
+}
+
+#del:hover {
+    background:red;
+}
