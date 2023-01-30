@@ -134,19 +134,19 @@ function scanBarcode() {
         if (err) { console.log(err); return }
         Quagga.start();
     });
-  }
+}
 
-  Quagga.onDetected(function(result) {
+Quagga.onDetected(function(result) {
     let barcode = result.codeResult.code;
-  console.log(barcode);
-  //Add barcode to inventory and update the local storage
-  let item = {
-  name: barcode,
-  quantity: 1,
-  price: 0
-  };
-  inventory.push(item);
-  addInventoryRow(item);
-  localStorage.setItem("inventory", JSON.stringify(inventory));
-  Quagga.stop();
+    console.log(barcode);
+    //Add barcode to inventory and update the local storage
+    let item = {
+        name: barcode,
+        quantity: 1,
+        price: 0
+    };
+    inventory.push(item);
+    addInventoryRow(item);
+    localStorage.setItem("inventory", JSON.stringify(inventory));
+    Quagga.stop();
   });

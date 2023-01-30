@@ -1,14 +1,8 @@
 *{
     margin: 0;
-    padding: 0rem;
+    padding: 0;
     box-sizing: border-box;
 }
-/* .nav-logo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-} */
 
 /* Add some styling to the navbar */
 nav {
@@ -39,14 +33,13 @@ nav a.active {
 }
 
 h1{
-    position: relative;
-    left: 45%;
+    text-align:center;
     padding: 5px;
 }
 
 /* Add some spacing and styling to the form elements */
 form {
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -62,17 +55,14 @@ label {
     margin-right: 10px;
 }
 
-/* input {
-    overflow-x: ;
-    border-radius: 5px;
-    outline: none;
-} */
+
+.test {
+    margin: 40px;
+}
 
 /* Add some spacing and styling to the table */
 table {
-    margin: 20px;
     border-collapse: collapse;
-    /* padding: 20px; */
     width: 100%;
 }
 

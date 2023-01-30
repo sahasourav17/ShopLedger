@@ -5,15 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Inventory Mangement System</title>
+        <title>ShopLedger</title>
     </head>
-    <body>
+
+    <body onload="loadInventory()">
         <nav>
-            <a href="#" class="active">See Inventory</a>
+            <a href="#" class="active">Show Inventory</a>
             <a href="#">View Sales Report</a>
             <a href="#">Generate Invoice</a>
         </nav>
-        <h1>Shop Ledger</h1>
+        <button id="scanBarcodeBtn" onclick="scanBarcode()">Scan Barcode</button>
+        <div id="scanViewport"></div>
+        <h1>Your Inventory</h1>
         <form id="inventoryForm">
             <label for="itemName">Item Name:</label>
             <input type="text" id="itemName" name="itemName" required><br>
@@ -21,16 +24,21 @@
             <input type="number" id="itemQuantity" name="itemQuantity" required><br>
             <label for="itemPrice">Item Price:</label>
             <input type="number" id="itemPrice" name="itemPrice" required><br>
-            <button type="button" >Add Item</button>
+            <button type="button" onclick="addItem()">Add Item</button>
         </form>
-        <table id="inventoryTable">
-            <tr>
-                <th>Item Name</th>
-                <th>Item Quantity</th>
-                <th>Item Price</th>
-                <th>Actions</th>
-            </tr>
-        </table>
-        <script defer src=""></script>
+        <div class="test">
+
+            <table id="inventoryTable">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Quantity</th>
+                    <th>Item Price</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
+        </div>
+        <script defer src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+
     </body>
 </html>
