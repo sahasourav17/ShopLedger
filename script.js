@@ -21,7 +21,7 @@ function addItem() {
     let itemPrice = document.getElementById("itemPrice").value;
 
     if (itemName && itemPrice && itemQuantity){
-        // Create an object to store the item data
+        // Create an object to store the item data 
         let item = {
             name: itemName,
             quantity: itemQuantity,
