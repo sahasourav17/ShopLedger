@@ -14,6 +14,8 @@ A web application for shopowner's to automate their tasks like
   - add product via barcode
   - add product manually
   - CRUD operation functionality
+  
+- Build Sales Report
 
 ## Works need to be done:
 
