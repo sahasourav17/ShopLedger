@@ -1,0 +1,14 @@
+{
+  "name": "test-drive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sahasourav17/ShopLedger.git",
+  "author": "sahasourav17 <sahasourav1170@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "dependencies": {
+    "cypress": "^12.5.1"
+  }
+}
