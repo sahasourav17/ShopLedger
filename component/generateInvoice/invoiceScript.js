@@ -82,6 +82,13 @@ function addToInvoice(button) {
   // total payable amount
   let amountPayable = document.getElementById("amountPayable");
   amountPayable.innerHTML = `Total Amount to be paid: ${totalAmount}`;
+
+  let btn = document.createElement("BUTTON");
+  btn.innerHTML += `
+    <button onclick = "printInvoice()"> Print Invoice </button>
+  `;
+  console.log(document.body.btn - print);
+  document.body.appendChild(btn);
 }
 
 function printInvoice() {
