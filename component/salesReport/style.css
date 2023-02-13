@@ -12,16 +12,18 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
+    padding: 14px 16px;
     align-items: flex-end;
+    justify-content: flex-end;
     text-decoration: none;
 }
 nav li{
-    text-decoration: none;
+    list-style: none;
 }
 
 /* Style the navbar links */
 nav a {
-    float: right;
+    /* float: right; */
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -76,6 +78,7 @@ tr:hover {
 }
 
 .container h2{
-    padding-top: 40%;
+    /* padding-top: 40%; */
+    padding-top: 20px;
     text-align: center;
 }
