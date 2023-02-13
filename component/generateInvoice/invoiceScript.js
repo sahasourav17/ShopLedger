@@ -105,6 +105,7 @@ function printInvoice() {
 }
 
 function addSale(total, profit) {
+  let sales = JSON.parse(localStorage.getItem("sales")) || [];
   let date = new Date().toLocaleDateString();
   let sale = {
     date: date,
@@ -113,7 +114,6 @@ function addSale(total, profit) {
   };
   //   console.log(sale);
 
-  let sales = JSON.parse(localStorage.getItem("sales"));
 
   sales.push(sale);
   //   console.log(sales);
