@@ -82,17 +82,10 @@ function addToInvoice(button) {
   // total payable amount
   let amountPayable = document.getElementById("amountPayable");
   amountPayable.innerHTML = `Total Amount to be paid: ${totalAmount}`;
-
-  let btn = document.createElement("BUTTON");
-  btn.innerHTML += `
-    <button onclick = "printInvoice()"> Print Invoice </button>
-  `;
-  console.log(document.body.btn - print);
-  document.body.appendChild(btn);
 }
 
 function printInvoice() {
-  addSale(totalAmount, totalAmount * 0.1);
+  addSale(totalAmount, (totalAmount * 0.1).toFixed(0));
   let divContents = document.getElementById("invoice-items").innerHTML;
   let a = window.open("", "", "height=500, width=500");
   a.document.write("<html><body style='text-align:center;'>");
@@ -113,7 +106,6 @@ function addSale(total, profit) {
     profit: profit,
   };
   //   console.log(sale);
-
 
   sales.push(sale);
   //   console.log(sales);

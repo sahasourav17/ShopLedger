@@ -186,3 +186,20 @@ tr:hover {
    color: rgb(255, 255, 255);
    border: none;
 }
+
+#btn-print button:hover {
+    background: #56d15a;
+    color: black;
+}
+
+button {
+    background : #4CAF50;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+button:hover {
+    background: #56d15a;
+    color: #333;
+}
