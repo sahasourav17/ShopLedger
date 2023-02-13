@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add some styling to the navbar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 14px 0px;
+    align-items:center;
+    justify-content:flex-end;
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+}
+
+/* Style the navbar links */
+nav a {
+    /* float: right; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    align-content: center;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: rgba(206, 195, 195, 0.658);
+    color: black;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.container{
+    /* background-color: rgb(235, 132, 132); */
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container h2{
+    text-align: center;
+    padding: 8px;
+}
+
+/* style for button div */
+.btn-container{
+    /* background-color: #ddd; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* styles for Inventory and Invoice div */
+
+.inventory-invoice {
+    /* background-color: rgb(152, 152, 216); */
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+/* styles for inventory portion */
+.inventory-container {
+    padding: 8px;
+    /* background-color: rgb(199, 199, 199); */
+    width: 48%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.inventory-container h3{
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+/* Add some spacing and styling to the table */
+.inventory-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+
+.inventory-container table 
+th, td {
+    /* border-radius: 8px; */
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.inventory-container table 
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Add some hover effect to the table rows */
+.inventory-container table
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* styles for invoice portion */
+.invoice-container {
+    /* background-color: #d8d8d8; */
+    width: 48%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.invoice-items table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.invoice-header{
+    padding: 20px;
+}
+
+.invoice-header h3, p{
+    text-align: center;
+}
+
+.invoice-items{
+    padding: 8px;
+}
+
+.invoice-items table 
+th, td {
+    /* border-radius: 8px; */
+    /* border: 1px solid #ccc; */
+    padding: 8px;
+    text-align: left;
+    border: none;
+}
+
+.invoice-items table 
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Add some hover effect to the table rows */
+.invoice-items table
+tr:hover {
+    background-color: #f5f5f5;
+}

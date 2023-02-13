@@ -10,9 +10,9 @@
 
     <body onload="loadInventory()">
         <nav>
-            <a href="#" class="active">Show Inventory</a>
+            <a href="./component/generateInvoice/invoice.html">Generate Invoice</a>
             <a href="./component/salesReport/index.html">View Sales Report</a>
-            <a href="#">Generate Invoice</a>
+            <a href="#" class="active">Show Inventory</a>
         </nav>
         <button id="scanBarcodeBtn" onclick="scanBarcode()">Scan Barcode</button>
         <div id="scanViewport"></div>
@@ -21,7 +21,7 @@
             <label for="itemName">Item Name:</label>
             <input type="text" id="itemName" name="itemName" ><br>
             <label for="itemQuantity">Item Quantity:</label>
-            <input type="number" id="itemQuantity" name="itemQuantity" ><br>
+            <input type="number" id="itemQuantity" name="itemQuantity"><br>
             <label for="itemPrice">Item Price:</label>
             <input type="number" id="itemPrice" name="itemPrice" ><br>
             <button type="button" onclick="addItem()">Add Item</button>
