@@ -1,4 +1,5 @@
 # ShopLedger
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb448367-3f59-42db-8faf-c5f27e695bcf/deploy-status)](https://app.netlify.com/sites/stellar-peony-e43dd4/deploys)
 
 A web application for shopowner's to automate their tasks like
 
