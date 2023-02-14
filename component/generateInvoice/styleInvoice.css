@@ -172,6 +172,14 @@ tr:hover {
     background-color: #f5f5f5;
 }
 
+
+.invoice-items #amountPayable{
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
 /* styling buttons */
 
 #btn-print{

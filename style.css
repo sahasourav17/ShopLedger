@@ -110,3 +110,8 @@ button:hover {
 #del:hover {
     background:red;
 }
+
+#scanBarcodeBtn{
+    margin-left: 30px;
+    margin-top: 30px;
+}
