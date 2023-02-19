@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="../salesReport/style.css">
     <title>ShopLedger</title>
 </head>
+
 <body>
     <nav>
         <ul>
-          <li><a href="../../index.html">Show Inventory</a></li>
-          <li><a href="../salesReport/index.html" class="active">View Sales Report</a></li>
-          <li><a href="../generateInvoice/invoice.html">Generate Invoice</a></li>
+            <li><a href="../../index.html">Show Inventory</a></li>
+            <li><a href="../salesReport/index.html" class="active">View Sales Report</a></li>
+            <li><a href="../generateInvoice/invoice.html">Generate Invoice</a></li>
         </ul>
     </nav>
 
@@ -24,8 +26,12 @@
                 <th>Total Profit</th>
             </tr>
         </table>
-        <h2>Total Sales in the Last Month: <span id="totalLastMonth"></span></h2>
+        <div>
+            <h2>Total Sales in the Last Month: <span id="totalLastMonth"></span></h2>
+            <h2>Total Profit in the Last Month: <span id="totalProfitLastMonth"></span></h2>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

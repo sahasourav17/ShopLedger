@@ -85,7 +85,7 @@ function addToInvoice(button) {
 }
 
 function printInvoice() {
-  addSale(totalAmount, (totalAmount * 0.1).toFixed(0));
+  addSale(totalAmount, (totalAmount * 0.3).toFixed(0));
   let divContents = document.getElementById("invoice-items").innerHTML;
   let a = window.open("", "", "height=500, width=500");
   a.document.write("<html><body style='text-align:center;'>");

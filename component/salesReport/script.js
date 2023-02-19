@@ -30,7 +30,22 @@ function calculateLastMonthTotal() {
     document.getElementById("totalLastMonth").innerHTML = lastMonthTotal;
 }
 
-function addSale(total,profit) {
+//function for profit calculation
+function calculateLastMonthProfit() {
+    let today = new Date();
+    let lastMonth = new Date(today.getFullYear(), today.getMonth() - 1, today.getDate());
+    let lastMonthProfit = 0;
+    for (let i = 0; i < sales.length; i++) {
+        let sale = sales[i];
+        let saleDate = new Date(sale.date);
+        if (saleDate >= lastMonth && saleDate <= today) {
+            lastMonthProfit += sale.total * 0.3;
+        }
+    }
+    document.getElementById("totalProfitLastMonth").innerHTML = lastMonthProfit;
+}
+
+function addSale(total, profit) {
     let date = new Date().toLocaleDateString();
     let sale = {
         date: date,
@@ -44,13 +59,14 @@ function addSale(total,profit) {
 }
 
 
-window.onload = function() {
+window.onload = function () {
     let storedSales = localStorage.getItem("sales");
     if (storedSales) {
         sales = JSON.parse(storedSales);
-        for(let i = 0; i < sales.length; i++){
+        for (let i = 0; i < sales.length; i++) {
             addSalesRow(sales[i])
         }
     }
     calculateLastMonthTotal();
+    calculateLastMonthProfit();
 }  
