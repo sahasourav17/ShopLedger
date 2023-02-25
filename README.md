@@ -15,16 +15,18 @@ A web application for shopowner's to automate their tasks like
   - add product via barcode
   - add product manually
   - CRUD operation functionality
-- create `generate invoice` page
+- design and implement `generate invoice` page
+- update inventory with respect to sold products
+- design and implement 'sales report' page
 
 (Soumik)
 
-- print functionality of invoice
-- updating inventory with respect to sold products
+- add print functionality to `generate invoice` page
+- add functionality to view total profit in the `sales report` page
 
 (Abir)
 
-- manage sales report
+- fix styles
 - Report writing
 
 
